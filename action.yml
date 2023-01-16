@@ -1,0 +1,23 @@
+name: 'MST asana.com subtask updater'
+description: 'This action adds update to a pulse on monday.com'
+author: 'Zeljko Romanovic MST'
+inputs:
+  asana-api-key:
+    description: asana.com API Key. This parameter should be stored in the GitHub secrets.
+    required: true
+  asana-pulse-id:
+    description: asana.com task ID in which an update will be added. This parameter should be stored in the GitHub secrets.
+    required: true
+  asana-update-text:
+    description: Text which will be added as an update.
+    default: ''
+    required: true
+outputs:
+  asana-update-id:
+    description: ID of the update created with this action.
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: 'file-text'
+  color: 'green'
