@@ -1,11 +1,11 @@
-name: 'MST asana.com subtask updater'
-description: 'This action adds update to a pulse on monday.com'
+name: 'MST asana.com task updater'
+description: 'This action adds update to a task on asana.com'
 author: 'Zeljko Romanovic MST'
 inputs:
   asana-api-key:
     description: asana.com API Key. This parameter should be stored in the GitHub secrets.
     required: true
-  asana-pulse-id:
+  asana-task-id:
     description: asana.com task ID in which an update will be added. This parameter should be stored in the GitHub secrets.
     required: true
   asana-update-text:
