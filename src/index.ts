@@ -19,7 +19,7 @@ function run() {
         client.tasks.
             addSubtask(asanaTaskID, {
                 name: 'Update of the application',
-                notes: asanaUpdateText
+                html_notes: asanaUpdateText
             }).
             then(value => {
                 // set value to the output parameter
