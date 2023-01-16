@@ -28,7 +28,7 @@ function run() {
                 core.setFailed(error);
             });
     } catch(exception) {
-        core.setFailed(exception);
+        core.setFailed(exception as string);
     }
 }
 
